@@ -434,6 +434,8 @@ line-height: 2;
     /* Show the button on smaller screens */
     .back-to-top {
         display: block;
+        right: 30px;
+        bottom: 30px;
     }
 }    
 
