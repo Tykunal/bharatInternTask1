@@ -418,28 +418,9 @@ line-height: 2;
     transform: scale(1.4) translateY(0) translateZ(0);
   }
 
-/* Back to Top Button */
-/* .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    background-color: #151616;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: none; /* Hide by default */
-/* } */ 
-@media (max-width: 768px) {
-    /* Show the button on smaller screens */
-    .back-to-top {
-        display: block;
-        right: 30px;
-        bottom: 30px;
-    }
-}    
+/* back to top button */
 
-.back-to-top {
+  .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -449,6 +430,15 @@ line-height: 2;
     padding: 5px 5px;
     border-radius: 5px;
 }
+/* @media (max-width: 768px) { */
+    /* Show the button on smaller screens */
+    /* .back-to-top {
+        display: block;
+        right: 30px;
+        bottom: 30px;
+    }
+}     */
+
 .Btn {
     width: 45px;
     height: 45px;
@@ -503,9 +493,9 @@ line-height: 2;
 
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     /* Adjust styles for screens with a maximum width of 768px (tablets and smaller) */
-    .profile-pic {
+    /* .profile-pic {
       width: 50%;
       margin-top: 50px;
     }
@@ -520,11 +510,11 @@ line-height: 2;
       width: 80%;
       margin: 20px auto;
     }
-  }
-  
-  @media (max-width: 576px) {
+  } */
+
+  /* @media (max-width: 576px) {
     /* Adjust styles for screens with a maximum width of 576px (small mobile devices) */
-    .profile-pic {
+    /* .profile-pic {
       width: 70%;
       margin-top: 30px;
     }
@@ -551,5 +541,74 @@ line-height: 2;
     .nav-item {
       padding: 0 10px;
     }
-  }
-  
+  } */
+
+/* new added responise features */
+  @media (max-width: 768px) {
+    .profile-pic {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .skill-row {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .profile-desc,
+    .contact-desc {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Adjust the navbar and toggle button for smaller screens */
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .nav-item {
+        padding: 0 10px;
+    }
+
+    /* Show the back to top button on smaller screens and adjust its position */
+    .back-to-top {
+        display: block;
+        right: 30px;
+        bottom: 30px;
+    }
+    .Btn{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        /* position: relative; */
+        border: none;
+
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust styles for screens with a maximum width of 576px (small mobile devices) */
+    .profile-pic {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .skill-row,
+    .profile-desc,
+    .contact-desc {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
